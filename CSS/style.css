@@ -1,3 +1,23 @@
 body{
-    background-color: red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large; 
+
+    background-color: rgba(255, 0, 0, 0.247);
 }
+
+    .user-comment-grid-container{
+        height: 100vh;
+        padding: 1rem;
+
+        background-color: red;
+    }
+
+    .uc-banner{
+        padding: 1rem;
+        text-align: center;
+
+        color: white;
+        background-color: rgba(0, 0, 0, 0.466);
+    }
+
+    
