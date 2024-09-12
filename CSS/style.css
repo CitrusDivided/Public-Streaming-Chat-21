@@ -1,23 +1,75 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large; 
+    font-size: large;
 
-    background-color: rgba(255, 0, 0, 0.247);
+    background-color: rgb(0, 0, 0);
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+}
+
+li{
+    display: grid;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
     .user-comment-grid-container{
+        display: grid;
         height: 100vh;
         padding: 1rem;
 
-        background-color: red;
+        background-color: rgb(26, 26, 26);
     }
 
-    .uc-banner{
-        padding: 1rem;
-        text-align: center;
+        .uc-banner{
+            padding: 1rem;
+            height: fit-content;
+            text-align: center;
+            margin: 1rem;
 
-        color: white;
-        background-color: rgba(0, 0, 0, 0.466);
-    }
+            color: white;
+            background-color: rgba(0, 0, 0, 0.466);
+            box-shadow: 0px 0px 50px 0px black;
+            border-radius: 0.4rem;
+        }
 
-    
+        .listed-item-grid{
+            background-color: black;
+        }
+
+        .form-decoration{
+            padding: 1rem;
+            margin: 1rem;
+            width: 60vw;
+            text-align: center;
+
+            color: aliceblue;
+            background: rgba(0, 0, 0, 0.658);
+            border: 1px solid rgba(0, 0, 0, 0.562);
+        }
+
+        .username-base{
+            background-color: rgb(41, 41, 41);
+            height: 1rem;
+        }
+
+        .comment-base{
+            height: 5rem;
+
+            border: 1px solid black;
+            background-color: rgb(8, 4, 17);
+            
+        }
+
+
