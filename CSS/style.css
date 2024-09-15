@@ -29,8 +29,10 @@ li{
         height: 100vh;
         padding: 1rem;
 
-        background-color: rgb(26, 26, 26);
+        background-color: black;
     }
+
+
 
         .uc-banner{
             padding: 1rem;
@@ -39,13 +41,37 @@ li{
             margin: 1rem;
 
             color: white;
-            background-color: rgba(0, 0, 0, 0.466);
+            background-color: rgba(48, 48, 48, 0.466);
             box-shadow: 0px 0px 50px 0px black;
             border-radius: 0.4rem;
         }
 
         .listed-item-grid{
-            background-color: black;
+            animation-name: social-color;
+            animation-duration: 35s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes social-color {
+            0%{
+                background-color: rgba(0, 160, 99, 0.329);
+            }
+            25%{
+                background-color: rgba(190, 62, 169, 0.705);
+            }
+            50%{
+                background-color: rgba(87, 126, 255, 0.301);
+            }
+            51%{
+                background-color: rgba(87, 126, 255, 0.301);
+            }
+            75%{
+                background-color: rgba(235, 87, 255, 0.301);
+            }
+            100%{
+                background-color: rgba(0, 170, 65, 0.301);
+            }   
         }
 
         .form-decoration{
