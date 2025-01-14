@@ -1,4 +1,5 @@
 *{
+    scroll-snap-type: y mandatory;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -43,21 +44,43 @@ li{
 
 
         .uc-banner{
+            scroll-snap-align: start;
             padding: 1rem;
             height: fit-content;
             text-align: center;
-            margin: 1rem;
+            margin: 1rem 1rem 4rem 1rem;
 
             color: white;
             background-color: rgb(131, 37, 37);
             border-radius: 0.4rem;
         }
 
+            .uc-banner p:nth-child(1n) {
+                padding: 1rem;
+                margin: 0rem;
+
+                background: rgb(70, 0, 0);
+            }
+
+            .uc-banner p:nth-child(1) {
+                border-top-left-radius: 0.4rem;
+                border-top-right-radius: 0.4rem;
+            }
+
+            .uc-banner p:nth-child(2) {
+                scroll-snap-align: start;
+            
+                border-bottom-left-radius: 0.4rem;
+                border-bottom-right-radius: 0.4rem;
+            }
+
 
         .listed-item-grid{
+            padding: 1rem;
+            scroll-snap-align: start;
+
             border-radius: 0.4rem;
             background: rgba(0, 0, 0, 0.753);
-            padding: 1rem;
         }
 
         ul:nth-child(even){
