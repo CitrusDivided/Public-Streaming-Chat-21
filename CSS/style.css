@@ -45,29 +45,40 @@ li{
 
         .uc-banner{
             scroll-snap-align: start;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 1fr;
             padding: 1rem;
             height: fit-content;
             text-align: center;
             margin: 1rem 1rem 4rem 1rem;
 
             color: white;
-            background-color: rgb(131, 37, 37);
+            background-color: rgb(36, 9, 9);
             border-radius: 0.4rem;
         }
 
-            .uc-banner p:nth-child(1n) {
+            .uc-banner input:nth-child(1n) {
+                justify-self: center;
                 padding: 1rem;
                 margin: 0rem;
+                width: 80%;
 
+                text-align: center;
+                border: none;
                 background: rgb(70, 0, 0);
             }
 
-            .uc-banner p:nth-child(1) {
+                .uc-banner input:hover{
+                    background: rgb(121, 8, 8);
+                }
+
+            .uc-banner input:nth-child(1) {
                 border-top-left-radius: 0.4rem;
                 border-top-right-radius: 0.4rem;
             }
 
-            .uc-banner p:nth-child(2) {
+            .uc-banner input:nth-child(2) {
                 scroll-snap-align: start;
             
                 border-bottom-left-radius: 0.4rem;
