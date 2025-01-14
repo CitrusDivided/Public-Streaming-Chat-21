@@ -47,7 +47,7 @@ li{
             scroll-snap-align: start;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 1fr;
+            grid-template-rows: 60px 1fr;
             padding: 1rem;
             height: fit-content;
             text-align: center;
@@ -62,7 +62,7 @@ li{
                 justify-self: center;
                 padding: 1rem;
                 margin: 0rem;
-                width: 80%;
+                width: 100%;
 
                 text-align: center;
                 border: none;
@@ -76,11 +76,16 @@ li{
             .uc-banner input:nth-child(1) {
                 border-top-left-radius: 0.4rem;
                 border-top-right-radius: 0.4rem;
+                border-bottom-left-radius: 0rem;
+                border-bottom-right-radius: 0rem;
+
             }
 
             .uc-banner input:nth-child(2) {
                 scroll-snap-align: start;
             
+                border-top-left-radius: 0rem;
+                border-top-right-radius: 0rem;
                 border-bottom-left-radius: 0.4rem;
                 border-bottom-right-radius: 0.4rem;
             }
