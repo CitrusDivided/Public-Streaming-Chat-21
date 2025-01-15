@@ -9,7 +9,8 @@
 }
 
 html{
-        scroll-behavior: smooth;
+    
+    scroll-behavior: smooth;
 }
 
 body{
@@ -25,6 +26,10 @@ ul{
     padding: 0;
     display: grid;
     justify-content: center;
+}
+
+input:focus{
+    outline: none;
 }
 
 li{
@@ -77,8 +82,6 @@ li{
                 }
 
             .uc-banner input:nth-child(1) {
-                border-top-left-radius: 0.4rem;
-                border-top-right-radius: 0.4rem;
                 border-bottom-left-radius: 0rem;
                 border-bottom-right-radius: 0rem;
 
@@ -104,14 +107,29 @@ li{
             background: rgba(0, 0, 0, 0.753);
         }
 
+            .listed-item-grid:hover{
+                cursor: pointer;
+                transition: 0.4s;
+
+                box-shadow: 0px 0px 90px 30px rgba(0, 0, 0, 0.8), 0px 0px 0px 1px rgba(255, 255, 255, 0.26) inset;
+                background: rgba(0, 0, 0, 0.801);
+            }
+
+            .listed-item-grid:nth-child(even){
+                background: rgb(104, 9, 9);
+            }
+
+            .listed-item-grid input:nth-child(1){
+                background: red;
+            }
+
         ul:nth-child(even){
             animation-name: social-color;
             animation-duration: 5s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
 
-            border: 2px solid rgb(206, 143, 84);
-            border-radius: 0.4rem;
+            border-top: 2px solid rgb(148, 90, 36);
             padding: 2rem 0rem 2rem 0rem;
         }
 
