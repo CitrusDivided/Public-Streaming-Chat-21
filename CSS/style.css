@@ -120,7 +120,7 @@ li{
             }
 
             .listed-item-grid input:nth-child(1){
-                background: red;
+                background: rgb(99, 17, 72);
             }
 
         ul:nth-child(even){
@@ -158,6 +158,7 @@ li{
             padding: 1rem;
             margin: 1rem;
             width: 60vw;
+            justify-self: center;
             text-align: center;
 
             color: aliceblue;
@@ -171,13 +172,20 @@ li{
         }
 
         .comment-base{
-            justify-self: center;
             height: fit-content;
-            width: fit-content;
+            width: 80%;
 
             border: 1px solid black;
             background-color: rgb(8, 4, 17);
             
         }
+
+        #expandingTextarea {
+            width: 100%;
+            min-height: 50px;
+            overflow: hidden;
+            resize: none;
+        }
+          
 
 
