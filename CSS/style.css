@@ -13,6 +13,7 @@ html{
 }
 
 body{
+    margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
 
@@ -36,7 +37,6 @@ li{
 
     .user-comment-grid-container{
         display: grid;
-        padding: 1rem;
 
         background-color: inherit;
     }
@@ -48,14 +48,10 @@ li{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 60px 1fr;
-            padding: 1rem;
             height: fit-content;
+            width: 100vw;
             text-align: center;
             margin: 1rem 1rem 4rem 1rem;
-
-            color: white;
-            background-color: rgb(36, 9, 9);
-            border-radius: 0.4rem;
         }
 
             .uc-banner input:nth-child(1n) {
@@ -68,6 +64,7 @@ li{
                 border: none;
                 color: rgb(255, 255, 255);
                 background: rgb(70, 0, 0);
+                box-shadow: 0px 0px 50px black;
             }
 
                 .uc-banner input::after{
@@ -108,7 +105,6 @@ li{
         }
 
         ul:nth-child(even){
-            mix-blend-mode: plus-lighter;
             animation-name: social-color;
             animation-duration: 5s;
             animation-iteration-count: infinite;
