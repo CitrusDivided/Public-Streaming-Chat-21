@@ -66,9 +66,15 @@ li{
 
                 text-align: center;
                 border: none;
+                color: rgb(255, 255, 255);
                 background: rgb(70, 0, 0);
             }
 
+                .uc-banner input::after{
+                    background-color: red;
+                width: 100%;
+
+                }
                 .uc-banner input:hover{
                     background: rgb(121, 8, 8);
                 }
@@ -84,6 +90,8 @@ li{
             .uc-banner input:nth-child(2) {
                 scroll-snap-align: start;
             
+                font-size: larger;
+                font-weight: bold;
                 border-top-left-radius: 0rem;
                 border-top-right-radius: 0rem;
                 border-bottom-left-radius: 0.4rem;
