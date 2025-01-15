@@ -171,7 +171,9 @@ li{
         }
 
         .comment-base{
-            height: 5rem;
+            justify-self: center;
+            height: fit-content;
+            width: fit-content;
 
             border: 1px solid black;
             background-color: rgb(8, 4, 17);
