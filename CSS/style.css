@@ -105,13 +105,15 @@ li{
 
             border-radius: 0.4rem;
             background: rgba(0, 0, 0, 0.753);
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.37), 0px 0px 0px 1px rgba(255, 255, 255, 0.26) inset;
+
         }
 
             .listed-item-grid:hover{
                 cursor: pointer;
                 transition: 0.4s;
 
-                box-shadow: 0px 0px 90px 30px rgba(0, 0, 0, 0.8), 0px 0px 0px 1px rgba(255, 255, 255, 0.26) inset;
+                box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.6), 0px 0px 0px 1px rgba(255, 255, 255, 0.26) inset;
                 background: rgba(0, 0, 0, 0.801);
             }
 
@@ -125,32 +127,29 @@ li{
 
         ul:nth-child(even){
             animation-name: social-color;
-            animation-duration: 5s;
+            animation-duration: 15s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
 
-            border-top: 2px solid rgb(148, 90, 36);
+            border-top: 2px solid rgb(71, 35, 0);
             padding: 2rem 0rem 2rem 0rem;
+            box-shadow: 0px 0px 50px black, 0px 0px 1px white inset;
         }
 
         @keyframes social-color {
             0%{
-                background-color: rgba(0, 160, 99, 0.329);
+                background-color: rgb(0, 26, 15);
             }
-            25%{
-                background-color: rgba(190, 62, 169, 0.705);
-            }
+
             50%{
-                background-color: rgba(87, 126, 255, 0.301);
+                background-color: rgb(0, 22, 13);
             }
-            51%{
-                background-color: rgba(87, 126, 255, 0.301);
-            }
+
             75%{
-                background-color: rgba(235, 87, 255, 0.301);
+                background-color: rgb(0, 26, 15);
             }
             100%{
-                background-color: rgba(0, 170, 65, 0.301);
+                background-color: rgb(0, 24, 15);
             }   
         }
 
